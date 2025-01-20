@@ -82,12 +82,36 @@
 ![mac_gcc_installed](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/mac_gcc_installed.png)
 
 ### Linux (ubuntu).
-##### Verificar si ya tenemos instalado make.
+##### **Nota: normalmente ubuntu ya viene con todo el paquete de desarrollo instalado.**
+
+#### Verificar si ya tenemos instalado make.
 > * Abrimos la consola de comandos y tecleamos: **make --version**.
 
 	make --version
-> * En caso de ya tener **make** instalado nos saldra un mensaje similar al siguiente:
 
+![linux_build_installed](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/linux_build_installed.png)
 
->   Si este es tu caso te puedes saltar esta sección.
+#### En caso de no tener el paquete de desarrollo, debemos ingresar los siguientes siguientes comando:
 
+> * 1. El siguiente comando nos permite obtener las ultimas actualizaciones de las herramientas de ubuntu.
+
+	sudo apt-get update
+
+> * 2. El siguiente comando nos permite descargar las herrameintas del entorno de desarrollo de ubuntu.
+
+	sudo apt-get install build-essential
+
+> * 3. El siguiente comando nos actualizar las herramientas a las ultimas versiones disponibles.
+
+	sudo apt-get upgrade
+
+> * 4. Verficar la instalación de make:
+
+	make --version
+
+> * 5. También podemos verificar los compiladores de lenguage C (gcc) y C++ (g++).
+
+	gcc --version
+	g++ --version
+
+![linux_complete_setup](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/linux_complete_setup.png)
