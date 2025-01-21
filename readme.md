@@ -71,7 +71,7 @@ o
 
 **Nota: Si este tu caso te puedes saltar esta sección.**
 
-#### Instalación del entorno de desarrollo.
+#### Instalación de las herramientas de desarrollo.
 
 > Como ya antes se habia mencionado, lo mas común es que estas herramientas de desarrollo no esten instaladas en nuestro equipo,
 > por lo que será necesario instalarlas.
@@ -180,6 +180,7 @@ o
 ![win_sys_settings](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/win_sys_settings.png)
 
 > > > > Damos doble clic en **Acerca de tu PC**, que nos abre la ventana de **Configuración**.
+
 > > > 13.1.2. Dentro de la ventana de **Configuración**, al costado izquiero debajo de la opción de **Inicio**, encontraremos la opción de **Sistema** y le damos clic.
 
 ![win_sys_settings1](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/win_sys_settings1.png)
@@ -260,7 +261,7 @@ o
 
 **Nota: Si este tu caso te puedes saltar esta sección.**
 
-#### Instalación del entorno de desarrollo.
+#### Instalación de las herramientas de desarrollo.
 
 > Como ya antes se habia mencionado, lo mas común es que estas herramientas de desarrollo no esten instaladas en nuestro equipo,
 > por lo que será necesario instalarlas.
@@ -319,7 +320,7 @@ Lo que debemos hacer es solo actualizar nuestras herramientas de desarrollo.
 
 Esto suele tomar tiempo en lo que actualiza todo el entorno de desarrollo.
 
-#### Instalación del entorno de desarrollo (en caso de no tenerlas instaladas).
+#### Instalación de las herramientas de desarrollo (en caso de no tenerlas instaladas).
 
 > 1. Actualizamos la lista de paquetes de software disponibles en los repositorios oficiales.
 
@@ -354,3 +355,16 @@ Esto suele tomar tiempo en lo que actualiza todo el entorno de desarrollo.
 	g++ --version
 
 ![linux_complete_setup](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/linux_complete_setup.png)
+
+**Nota: ya tenemos todas las herramientas de desarrollo instaladas para nuestro curso.**
+Yo recomiento que instalemos un IDE (entorno de desarrollo integrado), ya que esto nos permitirá realizar nuestro curso de una manera más cómoda.
+
+En lo personal me gusta mucho Visual Studio Code.
+
+> Mac: https://code.visualstudio.com/docs/setup/mac
+
+> Linux: https://code.visualstudio.com/docs/setup/linux
+
+> Windows: https://code.visualstudio.com/docs/setup/windows
+
+**Nota: dentro de los enlaces anteriores vienen las instrucciones de instalación para cada sistema operativo.**
