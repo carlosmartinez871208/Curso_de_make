@@ -1,7 +1,7 @@
 # Curso de Make
 ## Introducción.
 ### Bienvenida.
-Hola mi nombre es Carlos Martinez, me dedico al desarrollo de software embebido desde el 2015.
+> Hola mi nombre es Carlos Martinez, me dedico al desarrollo de software embebido desde el 2015.
 A lo largo de mi experiencia en distintas organizaciones, surge la necesidad de hacer este curso
 para brindar las bases de cómo se usa esta herramienta para soluciones reales en diversas
 plicaciones.
@@ -9,21 +9,21 @@ plicaciones.
 :metal: Bienvenidos :metal:
 
 ### Objetivo.
-* Asentar las bases de la herramienta Make y sus aplicaciones.
+> * Asentar las bases de la herramienta Make y sus aplicaciones.
 
-Este curso es **bottom to top**: lo que significa que vamos a ir desde lo más esencial hasta lo más
+> Este curso es **bottom to top**: lo que significa que vamos a ir desde lo más esencial hasta lo más
 complejo, de tal manera que el aprendizaje se vuelva acumulativo.
 
 ### Para quien es este curso.
-Este curso va dirigido a toda persona que quiera aprender las bases de **make** y como esta herramienta
+> Este curso va dirigido a toda persona que quiera aprender las bases de **make** y como esta herramienta
 nos permite automatizar procesos en la generación de archivos que no son código fuente a partir de 
 archivos de código fuente.
 
-Se presentan diversos ejercicios de práctica para asentar mejor los conocimientos, despues de todo
+> Se presentan diversos ejercicios de práctica para asentar mejor los conocimientos, despues de todo
 este tipo de herramientas se aprenden practicando.
 
 ### Requisitos.
-Se requiere tener conocimientos basicos de lenguage C o C++.
+> Se requiere tener conocimientos basicos de lenguage C o C++.
 
 ### Links.
 #### Make oficial site.
@@ -281,6 +281,18 @@ En este caso usaremos un gestor de paquetes para macOS: **Homebrew**.
 
 ![mac_brew_installed](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/mac_brew_installed.png)
 
+> > 2.1 Al final de la instalacion, los siguientes comandos nos ayudan a agregar **brew** al **PATH**
+
+	echo >> /Users/tu_usuario/.zprofile
+	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/tu_usuario/.zprofile
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+
+> > 2.2. Ingresamos el siguiente comando:
+
+	brew help
+
+![mac_brew_verification](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/brew_verification.png)
+
 > 3. Una vez que tenemos **brew** instalado, verificamos que nuestras herramientas de desarrollo esten instaladas.
 
 > > 3.1. Verificación de **make**, ingresamos el siguiente comando.
@@ -294,6 +306,18 @@ En este caso usaremos un gestor de paquetes para macOS: **Homebrew**.
 	gcc --version
 
 ![mac_gcc_installed](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/mac_gcc_installed.png)
+
+**Nota: para este curso estaremos usando el compilador de GNU.**
+
+> Para instalar gcc de GNU, ingresamos el comando siguiente:
+
+	brew install gcc
+
+> Para verificar la instalacion de gcc de GNU, ingresamos el comando siguiente:
+
+	gcc-14 --version
+
+![mac_gnu-gcc_installed](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/mac_gnu-gcc_installed.png)
 
 ### Linux (ubuntu).
 
@@ -368,3 +392,41 @@ En lo personal me gusta mucho Visual Studio Code.
 > Windows: https://code.visualstudio.com/docs/setup/windows
 
 **Nota: dentro de los enlaces anteriores vienen las instrucciones de instalación para cada sistema operativo.**
+
+Con esto demos terminada esta sección de set up.
+
+## Seccion 1: Conceptos básicos.
+### Qué es make?
+> **GNU make** es una herramienta la cual nos permite la generación de ejecutables y demás archivos que no son código fuente a partir de los archivos de código fuente de un programa.
+
+### Qué hace make?
+> **make** automáticamente determina cuales piezas (código fuente) necesitan ser compiladas o recompiladas y los comandos para hacerlo.
+
+### Qué es un makefile?
+> Para preparar el uso de **make**, debemos escribir un archivo que se llama **makefile** el cual describe la relación entre los archivos de un programa y provee los comandos para la actualización  de cada archivo.
+
+### Para qué sirve un makefile?
+> Un archivo **makefile** detecta cada cambio que se haga en cualquier archivo de código fuente, simplemente al escribir el siguiente comando:
+
+	make
+
+> **make** realiza las recompilaciones necesarias.
+
+> **make** usa la información del **makefile** y la ultima modificación de los archivos de código fuente para decidir cuales archivos necesitan ser actualizados.
+
+> Para cada uno de esos archivos, **make** usa las ordenes escritas en el **makefile**.
+
+#### En pocas palabras se necesita un archivo **makefile** para decirle a **make** que hacer.
+
+En nuestro curso usaremos **make** y **makefile** para compilar y linkear programas en lenguage C.
+
+**Nota: cabe mencionar que make no solo se limita a los lenguages C/C++**
+
+## Sección 2: Proceso de compilación de un programa en lenguages C/C++.
+### Preprocessing.
+
+### Compilation.
+
+### Assembly.
+
+### Linking.
