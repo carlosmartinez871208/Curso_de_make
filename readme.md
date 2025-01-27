@@ -431,6 +431,8 @@ El proceso de compilación de un programa en lenguage C/C++, se divide en las si
 > 3. Ensamblado (assembly).
 > 4. Enlazado (linking).
 
+![Compilation_process](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/Compilation_process.png)
+
 El proceso de compilación de un programa en C, nos lleva a convertir nuestro código fuente a un archivo ejecutable que realice la tarea que hemos desarrollado.
 
 ### Preprocessing.
@@ -490,13 +492,17 @@ o también se puede llamar el ensamblador directamente.
 
 	as main.s -o main.o
 
+La unidad mas pequeña de un archivo de tipo objeto es una **sección**.
+
+> **section** o sección es un blpque de código o datos que ocupan estacio contiguo en el mapa de memoria. Cada sección de memoria de un arvhico tipo objeto esta separado y es distinto uno del otro.
+
 ### Linking.
 
 Los archivos tipo objeto generados en la etapa de ensamblado son **enlazados** para crear un programa ejecutable.
 > 1. La entrada para esta etapa, son los archivos tipo objeto que contienen instrucciones en lenguaje máquina.
 > 2. El enlazador o linker nos permite integrar los archivos tipo objetos de múltiples módulos en un solo archivo.
 > 3. Si se usan funciones de librerías, el linker enlaza nuestro código a la librería que contiene la función que requerimos.
-> 4. Las librerías estándar ya viene integradas con el compilador, no es necesario recompilarlas.
+> 4. Las librerías estándar ya vienen integradas con el compilador, no es necesario recompilarlas.
 > 5. Las librerías que no son estándar deben ser enlazadas manualmente.
 
 Para invocar al linker usamos el siguiente comando:
@@ -512,5 +518,10 @@ Siendo nuestro caso:
 	./myexec
 
 El resultado después del linkeo es un archivo de tipo ELF (Executable Linked File).
+Con la siguiente estructura:
 
 ![ELF_format](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/ELF_format.png)
+
+Dentro del cual podemos ver que nuestro codigo en C/C++ se aloja en la siguientes secciones.
+
+![Virtual_memory](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/Virtual_memory.png)

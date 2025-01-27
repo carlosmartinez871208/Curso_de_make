@@ -1,0 +1,130 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram name="Página-1" id="gSwqzvccYF1aJ9RsNdcV">
+    <mxGraphModel dx="1059" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-2" value="&lt;b&gt;Stack:&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Alojamiento de memoria estática.&lt;/div&gt;&lt;div&gt;- Las variables alojadas en el stack son almacenadas directamente en memoria (RAM).&lt;/div&gt;&lt;div&gt;- Las variables alojadas en el stack no pueden cambiar su tamaño.&lt;/div&gt;&lt;div&gt;- Las variables alojadas en el stack solo son visibles para la función donde se encuentran.&lt;/div&gt;&lt;div&gt;- El stack solo aloja variables locales, una vez que la función ha terminado de ejecutarse: las variables se desalojan.&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Las variables en el stack solo pueden usadas por un hilo de ejecución.&lt;/div&gt;&lt;div&gt;- Las variables en el stack siempre se alojan de modo que le ultimo en entrar es el primero en salir (LIFO).&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#CC99FF,var(--ge-dark-color, #121212));" vertex="1" parent="1">
+          <mxGeometry x="70" y="40" width="630" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-4" value="&lt;b&gt;Free space.&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="70" y="190" width="630" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="180" as="sourcePoint" />
+            <mxPoint x="120" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="182" y="180" as="sourcePoint" />
+            <mxPoint x="182" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-7" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="245" y="180" as="sourcePoint" />
+            <mxPoint x="245" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="305" y="180" as="sourcePoint" />
+            <mxPoint x="305" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="464" y="180" as="sourcePoint" />
+            <mxPoint x="464" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="526" y="180" as="sourcePoint" />
+            <mxPoint x="526" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-11" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="589" y="180" as="sourcePoint" />
+            <mxPoint x="589" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="649" y="180" as="sourcePoint" />
+            <mxPoint x="649" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-13" value="&lt;b&gt;Shared memory / shared libraries&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Contiene librerías dinámicas: *.so&amp;nbsp;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#FF33FF,var(--ge-dark-color, #121212));shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="270" width="630" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-14" value="&lt;b&gt;Free space.&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="70" y="330" width="630" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-15" value="&lt;b&gt;Heap:&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Alojamiento de memoria dinámica, es decir que al momento de ejecución del programa se va modificando.&lt;/div&gt;&lt;div&gt;- Las variables en el heap son alojadas en el momento de ejecución del programa.&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Las variables alojadas en el heap pueden cambiar su tamaño.&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Las variables en el stack solo pueden usadas por todos los hilos de ejecución de un programa.&lt;/div&gt;&lt;div&gt;- El heap es usado por todas las partes de un programa.&lt;/div&gt;&lt;div&gt;- Se puede alojar y desalojar en cualquier tiempo.&lt;/div&gt;&lt;div&gt;- El recolector de basura solamente recolecta de la memoria del heap desde que el objecto se ha creado en el heap.&lt;/div&gt;&lt;div&gt;- Es muy importante liberar la memoria alojada dinámicamente.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#99FFFF,var(--ge-dark-color, #121212));" vertex="1" parent="1">
+          <mxGeometry x="70" y="410" width="630" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="430" as="sourcePoint" />
+            <mxPoint x="120" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-18" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="184" y="430" as="sourcePoint" />
+            <mxPoint x="184" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-19" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="245" y="430" as="sourcePoint" />
+            <mxPoint x="245" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="309" y="430" as="sourcePoint" />
+            <mxPoint x="309" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="461" y="430" as="sourcePoint" />
+            <mxPoint x="461" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-22" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="525" y="430" as="sourcePoint" />
+            <mxPoint x="525" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="586" y="430" as="sourcePoint" />
+            <mxPoint x="586" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-24" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="430" as="sourcePoint" />
+            <mxPoint x="650" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-25" value="&lt;b&gt;b.s.s. (block started symbol)&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;- Aloja estáticamente objetos (variables y constantes) que no han sido explícitamente inicializados, a nivel archivo.&lt;/div&gt;&lt;div&gt;- Inicializa a cero variables de tipo aritméticas.&lt;/div&gt;&lt;div&gt;- En el caso de apuntadores no inicializados los inicializa nulos (null).&lt;/div&gt;&lt;div&gt;- La inicialización la hace al momento de ejecutar el programa.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap; background-color: transparent;&quot;&gt;- %3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bb%26gt%3BShared%20memory%20%2F%20shared%20libraries%26lt%3B%2Fb%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B-%20Contiene%20librer%C3%ADas%20din%C3%A1micas%3A%20*.so%26amp%3Bnbsp%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3BfillColor%3Dlight-dark(%23FF33FF%2Cvar(--ge-dark-color%2C%20%23121212))%3Bshadow%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2270%22%20y%3D%22270%22%20width%3D%22630%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#CCCC00,var(--ge-dark-color, #121212));shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="560" width="630" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-27" value="&lt;b&gt;data&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Normalmente aloja los objetos (variables y constantes) que han sido explícitamente inicializados, globales o static.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Estas variable son copiadas de la memoria ROM&amp;nbsp; a la RAM, al momento de comenzar la ejecución.&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; text-wrap: nowrap; color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bb%26gt%3BShared%20memory%20%2F%20shared%20libraries%26lt%3B%2Fb%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B-%20Contiene%20librer%C3%ADas%20din%C3%A1micas%3A%20*.so%26amp%3Bnbsp%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3BfillColor%3Dlight-dark(%23FF33FF%2Cvar(--ge-dark-color%2C%20%23121212))%3Bshadow%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2270%22%20y%3D%22270%22%20width%3D%22630%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#FF9933,var(--ge-dark-color, #121212));shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="660" width="630" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0_EGlhshbrZT9MTy5wq-28" value="&lt;b&gt;text&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;- Este segmento de código, corresponde la sección de el espacio virtual de direcciones de un programa que contiene las instrucciones del ejecutable.&lt;/div&gt;&lt;div&gt;- Todas las insturcciones del ejecutable están guardadas en la memoria ROM.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap; background-color: transparent;&quot;&gt;- %3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bb%26gt%3BShared%20memory%20%2F%20shared%20libraries%26lt%3B%2Fb%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B-%20Contiene%20librer%C3%ADas%20din%C3%A1micas%3A%20*.so%26amp%3Bnbsp%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3BfillColor%3Dlight-dark(%23FF33FF%2Cvar(--ge-dark-color%2C%20%23121212))%3Bshadow%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2270%22%20y%3D%22270%22%20width%3D%22630%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=light-dark(#FF9999,var(--ge-dark-color, #121212));shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="720" width="630" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
