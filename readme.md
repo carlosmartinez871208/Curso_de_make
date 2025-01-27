@@ -395,6 +395,8 @@ En lo personal me gusta mucho Visual Studio Code.
 
 Con esto demos terminada esta sección de set up.
 
+**Nota: en mi caso en particular estaré haciendo los ejercicios en ubuntu**
+
 ## Seccion 1: Conceptos básicos.
 ### Qué es make?
 > **GNU make** es una herramienta la cual nos permite la generación de ejecutables y demás archivos que no son código fuente a partir de los archivos de código fuente de un programa.
@@ -423,10 +425,92 @@ En nuestro curso usaremos **make** y **makefile** para compilar y linkear progra
 **Nota: cabe mencionar que make no solo se limita a los lenguages C/C++**
 
 ## Sección 2: Proceso de compilación de un programa en lenguages C/C++.
+El proceso de compilación de un programa en lenguage C/C++, se divide en las siguientes etapas:
+> 1. Preprocesador (preprocessing).
+> 2. Compilación (compilation).
+> 3. Ensamblado (assembly).
+> 4. Enlazado (linking).
+
+El proceso de compilación de un programa en C, nos lleva a convertir nuestro código fuente a un archivo ejecutable que realice la tarea que hemos desarrollado.
+
 ### Preprocessing.
+
+En la etapa de preprocesador, se realizan los siguientes procesos:
+> 1. Se hace la expansión de macros, el preprocesador se encarga de sustituir las macros con sus valores.
+> 2. Se hace la expansion de la directivas **#include** con el contenido del archivo.
+> 3. Hace la preparación de las condiciones para la compilacion, en esta etapa el preprocesador evalua las directivas: **#if**, **#ifdef**, **ifndef**, **#else**, **#elif**, **#endif**, de tal
+> manera que incluye o excluye el código de acuerdo a la evaluación hecha.
+> 4. Control de linea, si se usa un programa para combinar o reordenar los archivos de código fuente en un archivo intermedio que se será compilado, se usa el control del linea para informar al 
+> compilador de que archivo de código fuente viene originalmente.
+> 6. Diagnósticos, se pueden detectar prolemas al momento de compilar y documentar el error o advertencia.
+> 5. Se reemplaca cada comentario con un espacio sencillo.
+
+Para invocar el preprocesador usamos el comando:
+
+	gcc -E
+
+Por ejemplo:
+
+	gcc -E main.c -o main.i
+
+> La extension *.i, se refiere a un archivo intermedio que ya ha sido precompilado.
 
 ### Compilation.
 
+Una vez que el preprocesado se ha hecho, pasamos a la etapa de **compilación** donde el código fuente se **compila** a un archivo de compilación intermedia. 
+Este archivo contiene intrucciones en lenguaje ensamblador.
+> 1. Esta etapa requiere de los archivos ya preprocesados con extension ***.i** .
+> 2. El compilador toma los archivos ***.i** y los convierte a lenguaje ensamblador.
+> 3. El lenguage ensamblador es un lenguaje de bajo nivel que usa mnemonicos por ejemplo: **MOV** para mover, **ADD** para añadir. Los mnemonicos son usados para representar operaciones del
+> CPU, lo que hace que estas operaciones pueden ser leidas por personas.
+
+Para invocar al compilador usamos el comando:
+
+	gcc -S
+
+Por ejemplo:
+
+	gcc -S main.i -o main.s
+
 ### Assembly.
 
+Una vez que la etapa de compilación ha terminado y como resultado tenemos nuestro archivo de compilación intermedia en lenguaje ensamblador, éste es **ensamblado** en un archivo tipo objeto (relocatable object file) que contiene instrucciones a nivel máquina.
+
+> 1. Esta etapa requiere de los archivos  en lenguaje ensamblador con extension *.s o *.asm.
+> 2. Cada instrucción en ensamblador representa a una instrucción en lenguage máquina.
+> 3. Cada instrucción en lenguaje máquina es una secuencia de ceros y unos de los cuales una parte parte realiza operaciones y lo que resta son direcciones de memoria de las variables o algun valor numérico.
+> 4. El lenguage ensamblador es independiente de la arquitectura del CPU, mientras que el lenguaje máquina si depende de la arquitectura del CPU.
+> 5. Las instrucciones en lenguaje máquina para un tipo de CPU muy probablemente no van a poder correr en un CPU de arquitectura diferente si no hace una modificación.
+
+Para invocar al ensamblador usamos el comando:
+
+	gcc -c main.s -o main.o
+
+o también se puede llamar el ensamblador directamente.
+
+	as main.s -o main.o
+
 ### Linking.
+
+Los archivos tipo objeto generados en la etapa de ensamblado son **enlazados** para crear un programa ejecutable.
+> 1. La entrada para esta etapa, son los archivos tipo objeto que contienen instrucciones en lenguaje máquina.
+> 2. El enlazador o linker nos permite integrar los archivos tipo objetos de múltiples módulos en un solo archivo.
+> 3. Si se usan funciones de librerías, el linker enlaza nuestro código a la librería que contiene la función que requerimos.
+> 4. Las librerías estándar ya viene integradas con el compilador, no es necesario recompilarlas.
+> 5. Las librerías que no son estándar deben ser enlazadas manualmente.
+
+Para invocar al linker usamos el siguiente comando:
+
+	gcc main.o -o myexec
+
+**myexec** es el nombre que le he dado a mi archivo ejecutable. Para correr el archivo solo usamos el siguiente comando:
+
+	./you_executable_file
+
+Siendo nuestro caso:
+
+	./myexec
+
+El resultado después del linkeo es un archivo de tipo ELF (Executable Linked File).
+
+![ELF_format](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/ELF_format.png)
