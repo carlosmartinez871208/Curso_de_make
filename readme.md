@@ -431,7 +431,13 @@ El proceso de compilación de un programa en lenguage C/C++, se divide en las si
 > 3. Ensamblado (assembly).
 > 4. Enlazado (linking).
 
+Este proceso se muestra a continuacion.
+
 ![Compilation_process](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/Compilation_process.png)
+
+En forma de bloques.
+
+![Compilation](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/Compilation.png)
 
 El proceso de compilación de un programa en C, nos lleva a convertir nuestro código fuente a un archivo ejecutable que realice la tarea que hemos desarrollado.
 
