@@ -500,7 +500,7 @@ o también se puede llamar el ensamblador directamente.
 
 La unidad mas pequeña de un archivo de tipo objeto es una **sección**.
 
-> **section** o sección es un blpque de código o datos que ocupan estacio contiguo en el mapa de memoria. Cada sección de memoria de un arvhico tipo objeto esta separado y es distinto uno del otro.
+> **section** o sección es un bloque de código o datos que ocupan espacio contiguo en el mapa de memoría. Cada sección de memoría de un archivo tipo objeto esta separado y es distinto uno del otro.
 
 ### Linking.
 
@@ -528,6 +528,6 @@ Con la siguiente estructura:
 
 ![ELF_format](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/ELF_format.png)
 
-Dentro del cual podemos ver que nuestro codigo en C/C++ se aloja en la siguientes secciones.
+En cuestion de memoria virtual tenemos la siguiente estructura.
 
 ![Virtual_memory](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/Virtual_memory.png)
