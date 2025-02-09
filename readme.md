@@ -397,34 +397,7 @@ Con esto demos terminada esta sección de set up.
 
 **Nota: en mi caso en particular estaré haciendo los ejercicios en ubuntu**
 
-## Seccion 1: Conceptos básicos.
-### Qué es make?
-> **GNU make** es una herramienta la cual nos permite la generación de ejecutables y demás archivos que no son código fuente a partir de los archivos de código fuente de un programa.
-
-### Qué hace make?
-> **make** automáticamente determina cuales piezas (código fuente) necesitan ser compiladas o recompiladas y los comandos para hacerlo.
-
-### Qué es un makefile?
-> Para preparar el uso de **make**, debemos escribir un archivo que se llama **makefile** el cual describe la relación entre los archivos de un programa y provee los comandos para la actualización  de cada archivo.
-
-### Para qué sirve un makefile?
-> Un archivo **makefile** detecta cada cambio que se haga en cualquier archivo de código fuente, simplemente al escribir el siguiente comando:
-
-	make
-
-> **make** realiza las recompilaciones necesarias.
-
-> **make** usa la información del **makefile** y la ultima modificación de los archivos de código fuente para decidir cuales archivos necesitan ser actualizados.
-
-> Para cada uno de esos archivos, **make** usa las ordenes escritas en el **makefile**.
-
-#### En pocas palabras se necesita un archivo **makefile** para decirle a **make** que hacer.
-
-En nuestro curso usaremos **make** y **makefile** para compilar y linkear programas en lenguage C.
-
-**Nota: cabe mencionar que make no solo se limita a los lenguages C/C++**
-
-## Sección 2: Proceso de compilación de un programa en lenguages C/C++.
+## Sección 1: Proceso de compilación de un programa en lenguages C/C++.
 El proceso de compilación de un programa en lenguage C/C++, se divide en las siguientes etapas:
 > 1. Preprocesador (preprocessing).
 > 2. Compilación (compilation).
@@ -531,3 +504,30 @@ Con la siguiente estructura:
 En cuestion de memoria virtual tenemos la siguiente estructura.
 
 ![Virtual_memory](https://github.com/carlosmartinez871208/Curso_de_make/blob/main/images/Virtual_memory.png)
+
+## Seccion 2: Conceptos básicos.
+### Qué es make?
+> **GNU make** es una herramienta la cual nos permite la generación de ejecutables y demás archivos que no son código fuente a partir de los archivos de código fuente de un programa.
+
+### Qué hace make?
+> **make** automáticamente determina cuales piezas (código fuente) necesitan ser compiladas o recompiladas y los comandos para hacerlo.
+
+### Qué es un makefile?
+> Para preparar el uso de **make**, debemos escribir un archivo que se llama **makefile** el cual describe la relación entre los archivos de un programa y provee los comandos para la actualización  de cada archivo.
+
+### Para qué sirve un makefile?
+> Un archivo **makefile** detecta cada cambio que se haga en cualquier archivo de código fuente, simplemente al escribir el siguiente comando:
+
+	make
+
+> **make** realiza las recompilaciones necesarias.
+
+> **make** usa la información del **makefile** y la ultima modificación de los archivos de código fuente para decidir cuales archivos necesitan ser actualizados.
+
+> Para cada uno de esos archivos, **make** usa las ordenes escritas en el **makefile**.
+
+#### En pocas palabras se necesita un archivo **makefile** para decirle a **make** que hacer.
+
+En nuestro curso usaremos **make** y **makefile** para compilar y linkear programas en lenguage C.
+
+**Nota: cabe mencionar que make no solo se limita a los lenguages C/C++**
